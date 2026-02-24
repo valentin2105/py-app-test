@@ -11,3 +11,7 @@ def root():
 def ping():
      return {"pong": True}
 
+@app.get("/pong")
+def ping():
+     return {"ping": True}
+
