@@ -15,3 +15,8 @@ def ping():
 def ping():
      return {"ping": True}
 
+@app.get("/tutu", response_class=HTMLResponse)
+def root():
+    return "<h1>Hello tutu 😀😀</h1>"
+
+
