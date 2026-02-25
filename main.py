@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/", response_class=HTMLResponse)
 def root():
-    return "<h1>Hello World 😀😀</h1>"
+    return "<h1>Hello World 😀😀 !!!!</h1>"
 
 @app.get("/ping")
 def ping():

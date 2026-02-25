@@ -1,0 +1,15 @@
+
+services:
+  py-app:
+    image: py-app:test
+    container_name: py-app
+    environment:
+      ENV: test
+
+        ports:
+      - "5123:8000"
+    volumes:
+      - ./storage:/tmp/storage
+    restart: unless-stopped
+
+
